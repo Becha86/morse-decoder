@@ -38,22 +38,7 @@ const MORSE_TABLE = {
 };
 
 let decode = function(expr){
-  let words = (expr).split('  ');
-  console.log(words);
-  let letters = words.map((w) => w.split(' '));
-  console.log(letters);
-  let decoded = [];
-
-  for(let i = 0; i < letters.length; i++){
-    decoded[i] = [];
-    for(var x = 0; x < letters[i].length; x++){
-        if(MORSE_TABLE[letters[i][x]]){
-            decoded[i].push( MORSE_TABLE[letters[i][x]] );
-        }
-    }
-  }
-
-  return decoded.map(arr => arr.join('')).join(' ');
+  
 }
 
 module.exports = {
