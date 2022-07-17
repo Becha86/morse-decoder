@@ -39,6 +39,7 @@ const MORSE_TABLE = {
 };
 const expr = '00101010100000000010001011101000101110100000111111**********00001011110000111111000010111000101110100000111010';
 
+<<<<<<< HEAD
 function decode(expr){
     let str=""; 
     let symbols=expr;
@@ -49,6 +50,10 @@ function decode(expr){
         str+=symbols.includes("**********")?" ":MORSE_TABLE[symbols];
     }
    return str;
+=======
+let decode = function(expr){
+  
+>>>>>>> cae6e47ff770a53f7dae9e776c13b4449b56196b
 }
 
 
